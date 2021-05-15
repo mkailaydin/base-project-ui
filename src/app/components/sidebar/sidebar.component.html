@@ -1,0 +1,76 @@
+
+<div class="p-3 bg-white" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+  
+      <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      <span class="fs-5 fw-semibold">Vilinze</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Anasayfa
+        </button>
+        <div class="collapse show" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Genel Bakış</a></li>
+            <li><a href="#" class="link-dark rounded">Güncellemeler</a></li>
+            <li><a href="#" class="link-dark rounded">Raporlar</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+          Gösterge Paneli
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Genel Bakış</a></li>
+            <li><a href="#" class="link-dark rounded">Haftalık</a></li>
+            <li><a href="#" class="link-dark rounded">Aylık</a></li>
+            <li><a href="#" class="link-dark rounded">Yıllık</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+          Siparişler
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a routerLink="/orders/add" class="link-dark rounded">Yeni Oluştur</a></li>
+            <li><a routerLink="/orders" class="link-dark rounded">Gelen</a></li>
+
+          </ul>
+        </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#product-collapse" aria-expanded="false">
+          Ürünler
+        </button>
+        <div class="collapse" id="product-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a routerLink="products/add" class="link-dark rounded">Yeni Oluştur</a></li>
+            <li><a routerLink="products" class="link-dark rounded">Ürünler</a></li>
+            <li><a routerLink="categories" class="link-dark rounded">Kategoriler</a></li>
+
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          Hesap
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li><a href="#" class="link-dark rounded">Yeni...</a></li>
+            <li><a href="#" class="link-dark rounded">Profil</a></li>
+            <li><a href="#" class="link-dark rounded">Ayarlar</a></li>
+            <li><a (click) = "exit()" routerLink="login" class="link-dark rounded">Çıkış Yap</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  
